@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".TerceiraActivity" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/ic_launcher" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bt_Cadastro"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:background="@drawable/login" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="_Login: " />
+
+            <EditText
+                android:id="@+id/et_Login"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:ems="10"
+                android:inputType="text"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:background="@drawable/senha" >
+
+            <TextView
+                android:layout_width="52dp"
+                android:layout_height="30dp"
+                android:text="_Senha: " />
+
+            <EditText
+                android:id="@+id/et_Senha"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="7dp"/>
+        <Button
+            android:id="@+id/bt_Login"
+            android:layout_width="280dp"
+            android:layout_height="30dp"
+            android:background="#FFF200"
+            android:text="Login" />
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="7dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_Cadastro"
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="62dp"
+        android:background="#FFF200"
+        android:text="Cadastrar" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/fb_conectar" />
+
+</RelativeLayout>
